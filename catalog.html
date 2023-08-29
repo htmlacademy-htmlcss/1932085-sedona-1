@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог гостиниц в Седоне</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <h1 class="visually-hidden">Седона - каталог гостиниц.</h1>
     <header class="catalog-page-header">
       <h2 class="visually-hidden">Шапка каталога гостиниц Седоны.</h2>
       <a class="page-header-logo" href="index.html">
-        <img class="page-header-logo" src="logoSedona.svg" alt="Логотип города Седона.">
+        <img class="page-header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона.">
       </a>
         <nav class="navigation">
         <ul class="navigation-list">
@@ -29,6 +31,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#"><span class="visually-hidden" >Избранное.</span></a>
+            <span class="notification-badge">12</span>
           </li>
           <li class="navigation-item">
             <a class="button button-main" href="#">ХОЧУ СЮДА!</a>
@@ -43,11 +46,15 @@
         <h2 class="visually-hidden">Гостницы Седоны.</h2>
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"><img src="***.svg" alt="Иконка домик для перехода на главную."></a>
+            <a class="breadcrumbs-link" href="index.html">
+              <img src="images/home.svg"  alt="Переход на главную страницу.">
+            </a>
           </li>
-          <!-- что за элемент ">" между ними?-->
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <img src="images/breadcrumbs.svg" alt="переход на страницу гостиницы Седоны.">
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Гостиницы</a>
           </li>
         </ol>
         </section>
@@ -110,9 +117,8 @@
           </fieldset>
           <button class="button-additional" type="submit"><b>Применить</b></button>
           <button class="button-disabled" type="submit"><b>Сбросить</b></button>
-          <img src="**.jpg" alt="Размытый пейзаж со скалистыми горами.">
         </section>
-       <section>
+        <section>
           <h2 class="hotels-filtered"><b>Найдено гостиниц:</b></h2>
           <p class="search visually-hidden">найдено гостиниц.
             <output class="search-result">38</output>
@@ -129,55 +135,56 @@
             <a class="button" href="#">
               <span class="visually-hidden">Показать подробно.</span>
             </a>
-                <span class="visually-hidden">Показать список.</span>
+            <a class="button" href="#">
+              <span class="visually-hidden">Показать список.</span>
             </a>
             <ul class="hotel-list">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="hotel.html">
-                  <img class="hotel-card-image" src="#" alt="Гостиница Amara Resort & Spa.">
+                  <img class="hotel-card-image" src="images/hotel-amara.jpg" width="300" height="212" alt="Гостиница Amara Resort & Spa.">
                 </a>
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
                 <p class="accomodation-type">Гостиница</p>
                 <p class="hotel-card-price">От 4000₽</p>
                 <a class="hotel-card-button button-main" href="#">Подробнее</a>
                 <button class="button-additional" type="submit">В избранное</button>
-                  <!-- как отобразить рейтинговые звездочки?-->
+                  <!-- рейтинговые звездочки-->
                 <p>Рейтинг 8,5</p>
               </li>
               <li class="hotel-card">
                 <a class="hotel-card-link" href="hotel.html">
-                  <img class="hotel-card-image" src="#" alt="Гостиница Villas at Poco Diablo.">
+                  <img class="hotel-card-image" src="images/hotel-villas.jpg" width="300" height="212" alt="Гостиница Villas at Poco Diablo.">
                 </a>
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
                 <p class="accomodation-type">Гостиница</p>
                 <p class="hotel-card-price">От 5000₽</p>
                 <a class="hotel-card-button button-main" href="#">Подробнее</a>
                 <a class="hotel-card-button button-selected" href="#">В избранном</a>
-                  <!-- как отобразить рейтинговые звездочки?-->
+                  <!-- рейтинговые звездочки-->
                 <p>Рейтинг 9,2</p>
               </li>
               <li class="hotel-card">
                 <a class="hotel-card-link" href="hotel.html">
-                  <img class="hotel-card-image" src="#" alt="Гостиница Desert Quail Inn.">
+                  <img class="hotel-card-image" src="images/hotel-desert.jpg" width="300" height="212" alt="Гостиница Desert Quail Inn.">
                 </a>
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
                 <p class="accomodation-type">Гостиница</p>
                 <p class="hotel-card-price">От 2500₽</p>
                 <a class="hotel-card-button button-main" href="#">Подробнее</a>
                 <button class="button-additional" type="submit">В избранное</button>
-                 <!-- как отобразить рейтинговые звездочки?-->
+                 <!-- рейтинговые звездочки-->
                 <p>Рейтинг 6.9</p>
               </li>
               <li class="hotel-card">
                 <a class="hotel-card-link" href="hotel.html">
-                  <img class="hotel-card-image" src="#" alt="Гостиница GreenTree Inn.">
+                  <img class="hotel-card-image" src="images/hotel-green.jpg" width="300" height="212" alt="Гостиница GreenTree Inn.">
                 </a>
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
                 <p class="accomodation-type">Гостиница</p>
                 <p class="hotel-card-price">От 1500₽</p>
                 <a class="hotel-card-button button-main" href="#">Подробнее</a>
                 <button class="button-additional" type="submit">В избранное</button>
-                <!-- как отобразить рейтинговые звездочки?-->
+                <!-- рейтинговые звездочки-->
                 <p>Рейтинг 5.0</p>
               </li>
             </ul>
@@ -210,23 +217,23 @@
           </form>
         </section>
     </main>
-    <footer class="page-footer">
+    <footer>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты.</h2>
         <ul class="social-media">
           <li class="social-media-item">
             <a class="button" href="https://vk.com/htmlacademy">
-              <img src="icon-vkontakte.svg" alt="В контакте.">
+              <img src="images/vk-icon.svg" alt="В контакте.">
             </a>
           </li>
           <li class="social-media-item">
             <a class="button" href="https://t.me/htmlacademy">
-              <img src="icon-telegram.svg" alt="Телеграм.">
+              <img src="images/telegram-icon.svg" alt="Телеграм.">
             </a>
           </li>
           <li class="social-media-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="icon-youtube.svg" alt="Youtube.">
+              <img src="images/youtube-icon.svg" alt="Youtube.">
            </a>
           </li>
         </ul>
@@ -235,7 +242,7 @@
           <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         </p>
         <a class="logo-htmlacademy" href="https://htmlacademy.ru/">
-          <img src="logo-htmlacademy.svg" alt="Ссылка на сайт разработчика htmlacademy.ru.">
+          <img src="images/logo-htmlacademy.svg" width="115" height="33" alt="Ссылка на сайт разработчика htmlacademy.ru.">
         </a>
       </section>
     </footer>
