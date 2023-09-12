@@ -63,6 +63,9 @@ body {
 }
 .sedona-description {
   text-align: center;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 .sedona-description h2 {
   font-family: "PT Sans", sans-serif;
@@ -196,8 +199,8 @@ body {
   height: 385px;
 }
 .recommendations-food {
-  background-color: rgba(131, 179, 211, 0.12 0.2);
-  width: 400px;
+  background-color:  #ffffff;
+  width:  400px;
   height: 385px;
 }
 .hotel-search-title {
