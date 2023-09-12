@@ -353,6 +353,7 @@ body {
 }
 .hotel-card {
   background-color: #ffffff;
+  list-style: none;
 }
 .hotel-card-title {
   font-size: 24px;
