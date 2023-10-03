@@ -143,7 +143,7 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 1200px;
   flex-wrap: wrap;
 }
@@ -159,6 +159,7 @@ body {
   margin: 0;
   padding: 0;
   flex-direction: row-reverse;
+  order: 1;
 }
 .advantages-town-wrapper, .advantages-bridge-wrapper {
   background-color: #83B3D3;
@@ -166,15 +167,6 @@ body {
   margin: 0;
   padding: 103px 85px;
 }
-/*.advantages-image-town {
-  background-image: url("../images/sedona-main.jpg");
-  width: 800px;
-}
-.advantages-image-mountains {
-  background-image: url("../images/mountains-main.jpg");
-  width: 800px;
-}
-*/
 .advantages-item-square, .advantages-item-tourists {
   background-color: rgba(131, 179, 211, 0.12);
   width: 230px;
