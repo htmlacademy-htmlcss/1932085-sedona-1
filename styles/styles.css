@@ -50,6 +50,8 @@ body {
 .page-header-logo {
   width: 140px;
   margin-right: 30px;
+  margin-bottom: -6px;
+  z-index: 1;
 }
 .navigation-list {
   align-items: center;
@@ -65,15 +67,14 @@ body {
   max-width: 268px;
   margin-left: auto;
   align-items: center;
+  padding: 0;
 }
 .navigation-user :last-child {
   margin-left: auto;
 }
-.navigation-user .navigation-link {
-  border: #7DB54F solid 0.1px;
+.navigation-user-item {
   min-width: 20px;
   min-height: 20px;
-  padding: 22px 12px;
 }
 .navigation-link {
   display: flex;
@@ -227,6 +228,7 @@ body {
 .recommendations-for-tourists-list {
   list-style-type: none;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
@@ -237,7 +239,11 @@ body {
 .recommendations-for-tourists-item {
   max-width: 230px;
   min-height: 225px;
-  padding: 80px 85px;
+  margin: 80px 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0;
 }
 .recommendations-title {
   font-family: "PT Sans", sans-serif;
@@ -264,6 +270,8 @@ body {
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+  display: flex;
+  margin: 0 auto;
 }
 .recommendations-for-tourists-description {
   color: #333333;
@@ -274,15 +282,15 @@ body {
   line-height: 21px;
 }
 .recommendations-accomodation {
-  background-image: url("../images/house-icon.svg");
+  background-image: url(../images/house-icon.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 25%;
   background-color: rgba(131, 179, 211, 0.12);
   width: 230px;
   padding: 80px 85px;
 }
 .recommendations-food {
-  background-image: url("../images/burger-icon.svg");
+  background-image: url(../images/burger-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
@@ -290,7 +298,6 @@ body {
   padding: 80px 85px;
 }
 .recommendations-souvenirs {
-  background-image: url("../images/souvenir-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(131, 179, 211, 0.12);
@@ -621,6 +628,20 @@ fieldset {
   align-items: center;
   height: 49px;
 }
+.search-hotels-result {
+  display: flex;
+  min-width: 338px;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-result {
+  color: #000000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
 .hotels-filtered {
   font-size: 30px;
   font-style: normal;
@@ -645,12 +666,9 @@ fieldset {
   padding: 14px 12px;
   border: 2px solid #000000;
 }
-.search-result {
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
+.search-hotels-wrapper-right {
+  display: flex;
+  justify-items: flex-end;
 }
 .select-control {
   color: #333333;
@@ -660,6 +678,7 @@ fieldset {
   line-height: 21px;
   border: 2px solid #E5E5E5;
   height: 49px;
+  margin-right: 70px;
 }
 .hotel-cards {
   display: flex;
@@ -682,7 +701,7 @@ fieldset {
   padding: 20px;
   grid-template-columns: 140px 140px;
   gap: 16px 20px;
-  align-items: center;
+  align-items: baseline;
 }
 .hotel-card-link {
   grid-column: 1/-1;
@@ -728,7 +747,7 @@ fieldset {
   text-decoration: none;
   text-transform: uppercase;
   margin: 0;
-  max-height: 20px;
+  min-height: 20px;
 }
 .stars {
   gap: 0;
