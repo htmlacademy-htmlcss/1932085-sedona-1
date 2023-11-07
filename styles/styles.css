@@ -152,6 +152,9 @@ body {
 .hero {
   height: 485px;
   background-color: rgba(81, 135, 173);
+  background-image: url(../images/hero.jpg);
+  width: 1200px;
+  height: 485px;
   background-repeat: no-repeat;
 }
 .sedona-description {
@@ -190,6 +193,9 @@ body {
   justify-content: flex-start;
   width: 1200px;
   flex-wrap: wrap;
+}
+.advantages-item {
+  min-height: 179px;
 }
 .advantages-item-town {
   display: flex;
@@ -232,11 +238,28 @@ body {
   padding: 103px 85px;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
+.advantages-item-town {
+  background-image: url(../images/sedona-main.jpg);
+  width: 1200px;
+  height: 385px;
+  background-repeat: no-repeat;
+  background-position: right;
+
+}
+.advantages-item-bridge {
+  background-image: url(../images/mountains-main.jpg);
+  width: 1200px;
+  height: 385px;
+  background-repeat: no-repeat;
+
+}
+
 .advantages-item-square, .advantages-item-tourists {
   background-color: rgba(131, 179, 211, 0.12);
   width: 230px;
-  padding: 103px 85px;
+  padding: 105px 85px;
   min-height: 160px;
   display: flex;
   flex-direction: column;
@@ -245,11 +268,13 @@ body {
 .advantages-item-road {
   background-color: rgba(131, 179, 211, 0.2);
   width: 230px;
-  padding: 103px 85px;
+  padding: 105px 85px;
+  min-height: 160px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .advantages-title-town, .advantages-title-bridge {
   color: #FFFFFF;
   font-size: 24px;
@@ -585,7 +610,7 @@ body {
 .contact-phone {
   margin: 0 auto;
 }
-.contact-phone a {
+.contact-phone a{
   display: flex;
   margin: 0;
   padding: 5px 195px;
@@ -598,6 +623,9 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+.logo-htmlacademy {
+  fill: black;
+}
 .contact-phone a:hover {
   color: #756157;
 }
@@ -607,12 +635,22 @@ body {
 .contact-phone a:active {
   color: rgba(117, 97, 87, 0.3);
 }
-.logo-htmlacademy-image {
-  display: block;
+.logo-htmlacademy:hover {
+  fill: #756157;
 }
+.logo-htmlacademy:focus {
+  fill: #756157;
+}
+.logo-htmlacademy:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+/*.logo-htmlacademy-image {
+  display: block;
+}*/
 .inner-header {
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
+  background-color: #5A5B5F;
   color: #ffffff;
   margin: 0;
   width: 1060px;
@@ -821,7 +859,7 @@ fieldset {
 .button-disable:focus {
   outline: none;
   border-radius: 4px;
-  border: solid 3px rgba(131, 179, 211, 1);
+  outline: solid 3px rgba(131, 179, 211, 1);
 }
 .button-disable:active {
   color: rgba(255, 255, 255, 0.3);
@@ -868,6 +906,7 @@ fieldset {
   align-items: center;
   height: 49px;
   gap: 8px;
+
 }
 .view-mode {
   outline: none;
