@@ -20,7 +20,7 @@
 						<a class="navigation-link navigation-link-current" href="index.html">Главная</a>
 					</li>
 					<li class="navigation-item">
-						<a class="navigation-link" href="About-Sedona.html">О Седоне</a>
+						<a class="navigation-link" href="#">О Седоне</a>
 					</li>
 					<li class="navigation-item">
 						<a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -44,10 +44,10 @@
 							</svg>
 							<span class="visually-hidden">Избранное</span>
 						</a>
-						<!--<span class="notification-badge">12</span>-->
+						<span class="notification-badge">12</span>
 					</li>
 					<li class="navigation-item">
-						<a class="button button-main button-main-header" href="#">Хочу сюда!</a>
+						<a class="button button-main button-main-header" href="catalog.html">Хочу сюда!</a>
 					</li>
 				</ul>
 			</nav>
@@ -203,5 +203,67 @@
 				</section>
 			</div>
 		</footer>
+		<div class="modal-container">
+			<div class="modal modal-search">
+        <button class="modal-close-button">
+					<svg class="modal-close-cross" aria-hidden="true" focusable="false" width="14" height="14"  xmlns="http://www.w3.org/2000/svg">
+						<path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" />
+						</svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+					<form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+						<p class="field-group field-group-arrival">
+							<label class="arrival-date" for="arrival">Дата заезда:</label>
+								<input class="text-input" type="text" name="date-of-arrival" id="arrival" placeholder="Укажите дату">
+						</p>
+						<p class="field-group field-group-departure">
+							<label class="departure-date" for="departure">Дата выезда:</label>
+								<input class="text-input" type="text" name="date-of-departure" id="departure" placeholder="Укажите дату">
+						</p>
+						<div class="adults-children">
+							<p class="field-group field-group-adults">
+								<label class="number-adults" for="adults">Взрослые:</label>
+								<input class="text-input" type="number" name="number-of-adults" id="adults" placeholder="2">
+								<button class="minus" type="button">
+									<span>
+										<svg class="minus-icon" width="20" height="20"  xmlns="http://www.w3.org/2000/svg">
+										<path d="M3 9V11H17V9H3Z"/>
+										</svg>
+									</span>
+								</button>
+								<button class="plus" type="button"><span><svg class="plus-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+									</svg></span></button>
+							</p>
+							<p class="field-group field-group-children">
+							<label class="number-children" for="children">Дети:</label>
+											<span class="tooltip">
+												<button class="tooltip-toggle" type="button">
+												<svg class="tooltip-icon" width="21" height="20" fill="white" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M9.39307 4H11.3931V6H9.39307V4ZM11.3931 16H9.39307V7H11.3931V16Z" />
+												</svg>
+												</button>
+											</span>
+									<span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+									<input class="text-input" type="number" name="number-of-children" id="children" placeholder="2">
+									<button class="minus" type="button">
+										<span>
+											<svg class="minus-icon" width="20" height="20"  xmlns="http://www.w3.org/2000/svg">
+											<path d="M3 9V11H17V9H3Z"/>
+											</svg>
+										</span>
+									</button>
+									<button class="plus" type="button"><span><svg class="plus-icon" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+									<path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+									</svg></span></button>
+							</p>
+						</div>
+						<button class="button search" type="submit">Найти</button>
+					</form>
+				</section>
+		</div>
+	</div>
 	</body>
 </html>
