@@ -82,7 +82,6 @@
 									<div class="catalog-filters-container-left">
 										<section class="catalog-accomodation">
 											<h3 class="visually-hidden">Фильтры для выбора жилья.</h3>
-
 												<fieldset class="catalog-filter-group infrastructure">
 													<legend class="catalog-filter-title"><b>Инфраструктура:</b></legend>
 													<ul class="catalog-filter-list">
@@ -141,12 +140,12 @@
 										<fieldset class="catalog-filter-group price">
 											<legend class="catalog-filter-title">Стоимость, ₽:</legend>
 												<div class="price-filter">
-													<input class="price-filter-left" type="number" placeholder="от" />
-													<input class="price-filter-right" type="number" placeholder="до" />
+													<input class="price-filter-left" type="number" name="price-filter-left" placeholder="от" />
+													<input class="price-filter-right" type="number" name="price-filter-right" placeholder="до" />
 												</div>
 												<div class="range-scale">
 													<span class="visually-hidden">Фильтр по цене.</span>
-													<div class="range-bar" style="left: 0px; width: 226px">
+													<div class="range-bar" style="left: 0; width: 226px">
 														<button class="range-toggle toggle-min" type="button">
 														<span class="visually-hidden">Изменить минимальную цену.</span>
 														</button>
@@ -161,7 +160,7 @@
 											<button class="button-disable" type="submit"><b>Сбросить</b></button>
 										</div>
 									</div>
-								</form>
+							</form>
 				</header>
 				<section class="search-hotels">
 					<div class="search-hotels-result">
