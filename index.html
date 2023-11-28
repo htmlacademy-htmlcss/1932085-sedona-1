@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="utf-8">
 		<title>Седона - город в Аризоне</title>
-		<link rel="icon" href="favicon.ico" />
-		<link rel="icon" type="image/png" href="images/favicon.png" />
-		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="icon" href="favicon.ico">
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<link rel="stylesheet" href="styles/styles.css">
 	</head>
 	<body>
 		<h1 class="visually-hidden">Седона - главная страница.</h1>
@@ -13,7 +13,7 @@
 			<h2 class="visually-hidden">Шапка главной страницы сайта.</h2>
 			<nav class="navigation">
 				<a class="page-header-logo">
-					<img class="page-header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона." />
+					<img class="page-header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона.">
 				</a>
 				<ul class="navigation-list">
 					<li class="navigation-item">
@@ -86,7 +86,7 @@
 							<div class="advantages-bridge-wrapper">
 								<h4 class="advantages-title advantages-title-bridge">
 									<b>
-										Там есть <br />
+										Там есть <br>
 										мост дьявола
 									</b>
 								</h4>
@@ -106,24 +106,24 @@
 							<li class="recommendations-for-tourists-item recommendations-accomodation">
 								<h4 class="recommendations-for-tourists-title title-accomodation"><b>Жилье</b></h4>
 								<p class="recommendations-for-tourists-description">
-									Рекомендуем пожить <br />
-									в настоящем мотеле, <br />
+									Рекомендуем пожить <br>
+									в настоящем мотеле, <br>
 									всё как в кино!
 								</p>
 							</li>
 							<li class="recommendations-for-tourists-item recommendations-food">
 								<h4 class="recommendations-for-tourists-title title-food"><b>Еда</b></h4>
 								<p class="recommendations-for-tourists-description">
-									Всегда заказывайте <br />
-									топовый фирменный бургер, <br />
+									Всегда заказывайте <br>
+									топовый фирменный бургер, <br>
 									вы не разочаруетесь!
 								</p>
 							</li>
 							<li class="recommendations-for-tourists-item recommendations-souvenirs">
 								<h4 class="recommendations-for-tourists-title title-souvenirs"><b>Сувениры</b></h4>
 								<p class="recommendations-for-tourists-description">
-									Не только китайского,<br />
-									но и настоящего местного <br />
+									Не только китайского,<br>
+									но и настоящего местного <br>
 									производства!
 								</p>
 							</li>
@@ -134,7 +134,7 @@
 					<div class="hotel-search-wrapper">
 						<h2 class="hotel-search-title"><b>Заинтересовались?</b></h2>
 						<p class="hotel-search-description">
-							Укажите предполагаемые даты поездки, <br />
+							Укажите предполагаемые даты поездки, <br>
 							и мы покажем вам лучшие предложения гостиниц в Седоне
 						</p>
 						<a class="button button-main button-main-large" href="catalog.html">поиск гостиницы в Седоне</a>
@@ -144,11 +144,11 @@
 					<div class="subscribe-field">
 						<h2 class="subscribe-title"><b>Подпишитесь на рассылку</b></h2>
 						<p class="subscribe-description">
-							Только полезная информация и никакого спама, <br />
+							Только полезная информация и никакого спама, <br>
 							честное бойскаутское!
 						</p>
 						<p class="subscribe-form-email">
-							<input class="email" type="email" name="subscribe-email" id="subscribe-email" placeholder="Ваш e-mail" />
+							<input class="email" type="email" name="subscribe-email" id="subscribe-email" placeholder="Ваш e-mail">
 							<button class="button subscribe-button" type="submit">Подписаться</button>
 						</p>
 					</div>
@@ -267,3 +267,28 @@
 	</div>
 	</body>
 </html>
+
+
+<!--function getTextNodesIn(elem, opt_fnFilter) {
+  var textNodes = [];
+  if (elem) {
+    for (var nodes = elem.childNodes, i = nodes.length; i--;) {
+      var node = nodes[i],
+        nodeType = node.nodeType;
+      if (nodeType == 3) {
+        if (!opt_fnFilter || opt_fnFilter(node, elem)) {
+          if (node.data.trim() !== '') {
+            textNodes.push(node.data.trim() !== '' ? node : '');
+
+          }
+        }
+      } else if (nodeType == 1 || nodeType == 9 || nodeType == 11) {
+        textNodes = textNodes.concat(getTextNodesIn(node, opt_fnFilter));
+      }
+    }
+  }
+  return textNodes;
+}
+
+getTextNodesIn(document.body).forEach((item) => { item.textContent = "У меня есть несколько клиентов, которые записались ко мне на стрижку, не успев даже зайти в салон." })
+-->
