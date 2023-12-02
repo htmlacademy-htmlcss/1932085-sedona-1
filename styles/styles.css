@@ -60,7 +60,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 339px;
+  width: 345px;
 }
 .navigation-user {
   display: flex;
@@ -91,6 +91,7 @@ body {
   color: #000000;
   padding: 20px 16px;
   background-color: #ffffff;
+  max-width: 82px;
 }
 .navigation-link:hover {
   color: #756157;
@@ -180,7 +181,6 @@ body {
   background-color: #E5E5E5;
 }
 .hero {
-  height: 485px;
   background-color: #365f7d;
   background-image: url(../images/hero.jpg);
   width: 1200px;
@@ -204,7 +204,7 @@ body {
   text-align: center;
   margin: auto;
   margin-bottom: 25px;
-  width: 620px;
+  width: 630px;
 }
 .sedona-description {
   color: #333333;
@@ -276,27 +276,29 @@ body {
   background-image: url(../images/sedona-main.jpg);
   width: 1200px;
   background-repeat: no-repeat;
-  background-position: right;
-  background-color: #889581;
+  background-position: top right;
+  background-color: #82B3D3;
 }
 .advantages-item-bridge {
   background-image: url(../images/mountains-main.jpg);
   width: 1200px;
   background-repeat: no-repeat;
-  background-color: #f09e86;
+  background-color: #82B3D3;
 }
-.advantages-item-square, .advantages-item-tourists, .advantages-item-road {
+.advantages-item-square,
+.advantages-item-tourists,
+.advantages-item-road {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   color: #FFFFFF;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  width: 230px;
-  padding: 113px 85px;
+  width: 232px;
+  padding: 113px 84px;
 }
 .advantages-item-road {
   background-color: rgba(131, 179, 211, 0.2);
@@ -311,7 +313,9 @@ body {
   font-weight: 400;
   line-height: 21px;
 }
-.advantages-title-square, .advantages-title-road, .advantages-title-tourists {
+.advantages-title-square,
+.advantages-title-road,
+.advantages-title-tourists {
   position: relative;
   color: #000000;
   font-size: 24px;
@@ -322,7 +326,10 @@ body {
   width: 175px;
   padding-bottom: 60px;
 }
-.advantages-title-square::after, .advantages-title-road::after, .advantages-title-tourists::after {
+
+.advantages-title-square::after,
+.advantages-title-road::after,
+.advantages-title-tourists::after {
   position: absolute;
   left: 50%;
   bottom: 30px;
@@ -332,14 +339,19 @@ body {
   background-color: #0000004D;
   margin-left: -30px;
 }
-.advantages-description-square, .advantages-description-road, .advantages-description-tourists {
+
+.advantages-description-square,
+.advantages-description-road,
+.advantages-description-tourists {
   color: #333333;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
 }
-.advantages-title-town, .advantages-title-bridge {
+
+.advantages-title-town,
+.advantages-title-bridge {
   position: relative;
   color: #FFFFFF;
   font-size: 24px;
@@ -462,8 +474,8 @@ body {
   background-repeat: no-repeat;
 }
 .hotel-search {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 93px;
+  padding-bottom: 98px;
 }
 .hotel-search-wrapper {
   text-align: center;
@@ -487,6 +499,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  margin-top: 0;
   margin-bottom: 54px;
 }
 .button-main-large {
@@ -585,6 +598,7 @@ body {
   border: none;
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
+  width: 232px;
 }
 .subscribe-button:hover {
   color: #FFFFFF;
@@ -602,7 +616,6 @@ body {
   color: #FFFFFF;
   background-color: #E5E5E5;
 }
-/*footer*/
 .page-footer-container {
   display: flex;
   margin: 0 auto;
@@ -613,7 +626,6 @@ body {
 .footer-contacts {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 0 auto;
   width: 1060px;
 }
@@ -621,7 +633,9 @@ body {
   display: grid;
   grid-template-columns: 48px 48px 48px;
   grid-row-gap: 8px;
+  align-items: baseline;
   padding: 0;
+  padding-top: 16px;
   list-style-type: none;
   margin: 0;
   width: 142px;
@@ -649,8 +663,9 @@ body {
 .contact-phone {
   text-align: center;
   margin: 0 auto;
+  align-content: flex-start;
 }
-.contact-phone a{
+.contact-phone a {
   display: flex;
   color: #000000;
   font-family: "PT Sans", sans-serif;
@@ -664,7 +679,9 @@ body {
   padding: 5px 195px;
 }
 .logo-htmlacademy {
+  display: flex;
   fill: #000000;
+  padding-top: 11px;
 }
 .contact-phone a:hover {
   color: #756157;
@@ -691,8 +708,7 @@ body {
   background-color: #5A5B5F;
   margin: 0;
   width: 1060px;
-  padding: 70px;
-  padding-top: 35px;
+  padding: 35px 70px 72px 70px;
 }
 .inner-header-title {
   font-size: 60px;
@@ -904,6 +920,10 @@ fieldset {
   appearance: none;
   margin: 0;
 }
+.price-filter input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
 .range-scale {
   position: relative;
   height: 4px;
@@ -1049,7 +1069,7 @@ fieldset {
   align-items: center;
   margin: 0 auto;
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   width: 1060px;
 }
 .search-hotels-result {
@@ -1158,32 +1178,35 @@ fieldset {
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
-  gap: 20px;
+  gap: 17px 20px;
   margin: 0 auto;
   margin-bottom: 40px;
   padding: 0;
 }
 .hotel-card {
-  display: grid;
-  grid-template-columns: 140px 140px;
-  gap: 16px 20px;
-  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
   border: 1px solid #E6E6E6;
+  border-radius: 4px;
   background-color: #ffffff;
   list-style-type: none;
   padding: 20px;
 }
 .hotel-card-link {
-  grid-column: 1/-1;
+  display: flex;
+  order: -1;
+  margin-bottom: 16px;
 }
 .hotel-card-title {
-  grid-row: 2/3;
-  grid-column: 1/-1;
   color: #000000;
   font-style: normal;
   font-size: 24px;
+  line-height: 28px;
   font-weight: 700;
   margin: 0;
+  margin-bottom: 16px;
+  width: 300px;
 }
 .accomodation-type {
   color: #333333;
@@ -1192,6 +1215,9 @@ fieldset {
   font-weight: 400;
   line-height: 21px;
   margin: 0;
+  margin-bottom: 16px;
+  margin-right: 18px;
+  width: 140px;
 }
 .hotel-card-price {
   font-family: "PT Sans", sans-serif;
@@ -1200,11 +1226,22 @@ fieldset {
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  justify-self: right;
+  text-align: right;
   margin: 0;
+  margin-bottom: 16px;
+  width: 140px;
 }
 .hotel-card-button {
-  padding: 8px 26px;
+  padding: 8px 10px;
+  margin-bottom: 16px;
+  margin-right: 18px;
+  width: 120px;
+}
+.hotel-card .button-additional {
+  padding: 8px 10px;
+  margin-bottom: 16px;
+  margin-right: 0;
+  width: 140px;
 }
 .button-select {
   font-size: 16px;
@@ -1220,7 +1257,9 @@ fieldset {
   min-height: 20px;
   border: none;
   border-radius: 4px;
-  padding: 8px 18px;
+  padding: 8px 10px;
+  margin-bottom: 16px;
+  width: 120px;
 }
 .button-select:hover {
   color: #FFFFFF;
@@ -1240,8 +1279,13 @@ fieldset {
   background-color: #E5E5E5;
 }
 .stars {
-  gap: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
   margin: 0;
+  margin-right: 18px;
+  height: 37px;
+  width: 140px;
 }
 .star {
   fill: #83B3D3;
@@ -1256,10 +1300,9 @@ fieldset {
   text-align: center;
   background-color: #F2F2F2;
   border-radius: 4px;
-  width: 140px;
+  width: 100px;
   margin: 0;
-  padding-top: 9px;
-  padding-bottom: 8px;
+  padding: 9px 20px 8px 20px;
 }
 .pagination::before {
   position: absolute;
@@ -1328,7 +1371,6 @@ fieldset {
   text-align: center;
   background-color: #ffffff;
   width: 60px;
-  height: 36px;
   padding-top: 16px;
   padding-bottom: 18px;
   margin: 0;
@@ -1363,7 +1405,7 @@ subscribe-inner {
   padding-left: 258px;
   padding-right: 258px;
   padding-top: 96px;
-  padding-bottom: 104px;
+  padding-bottom: 102px;
   margin: 0;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
@@ -1400,7 +1442,6 @@ subscribe-inner {
   border: none;
   margin: 0;
 }
-/*modal window*/
 .modal-container {
   position: fixed;
   top: 0;
@@ -1570,6 +1611,11 @@ flex-direction: column;
   appearance: none;
   margin: 0;
 }
+.field-group-adults input[type="number"],
+.field-group-children input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
 .adults-children {
   display: flex;
   justify-content: space-between;
@@ -1671,7 +1717,7 @@ flex-direction: column;
 }
 .plus:hover,
 .minus:hover {
- fill: #000000;
+  fill: #000000;
 }
 .plus:focus,
 .minus:focus {

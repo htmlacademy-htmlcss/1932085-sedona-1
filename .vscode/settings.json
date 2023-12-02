@@ -20,5 +20,6 @@
   "css.lint.zeroUnits": "error",
   "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true,
-  "livePreview.defaultPreviewPath": "/index.html"
+  "livePreview.defaultPreviewPath": "/index.html",
+  "editor.formatOnSave": true
 }
