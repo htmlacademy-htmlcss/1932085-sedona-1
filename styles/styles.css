@@ -718,7 +718,7 @@ body {
   color: #ffffff;
   margin: 0;
 }
-fieldset {
+.catalog-filter-group {
   border: none;
 }
 .hotels-catalog {
@@ -1393,20 +1393,16 @@ fieldset {
   border-radius: 4px;
   background-color: #F2F2F2;
 }
-subscribe-inner {
+.subscribe-inner {
   width: 684px;
   margin: 0 auto;
 }
 .subscribe-field-inner {
   display: flex;
   flex-direction: column;
-  width: 684px;
   min-height: 215px;
-  padding-left: 258px;
-  padding-right: 258px;
   padding-top: 96px;
   padding-bottom: 102px;
-  margin: 0;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
 }
@@ -1765,7 +1761,8 @@ flex-direction: column;
   color: #FFFFFF;
   background-color: #E5E5E5;
 }
-::-moz-focus-outer, ::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+::-moz-focus-outer,
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
